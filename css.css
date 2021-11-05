@@ -11,6 +11,7 @@ body {
 
 body,
 code,
+ul,
 pre {
 	padding : var(--spacing);
 }
@@ -28,13 +29,13 @@ a:hover {
 }
 
 td {
-	border: 2px solid lightgrey;
+	border: 2px solid var(--generalColour);
 	text-align: center;
 }
 
 th {
 	background-color: darkgrey;
-	border: 2px solid lightgrey;
+	border: 2px solid var(--generalColour);
 }
 th:first-child {
 	border-radius: var(--borderRadius) 0 0 0;
