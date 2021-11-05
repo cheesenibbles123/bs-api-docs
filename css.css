@@ -9,15 +9,23 @@ body {
 	background-color: #171721;
 	color: var(--generalColour);
 	font-size: 15px;
-	padding-left: 20%;
-	padding-right: 20%;
+	margin-left: 15%;
+	margin-right: 15%;
 	margin-top: 85px;
+	padding-left: 5%;
+	padding-right: 5%;
+	border-left: 2px solid var(--generalColour);
+	border-right: 2px solid var(--generalColour);
 }
 
 pre {
 	padding : var(--spacing);
 	border: 2px solid var(--lineColour);
 	border-radius: var(--borderRadius);
+}
+
+ul {
+	list-style-type: disclosure-closed;
 }
 
 code {
@@ -60,8 +68,9 @@ th:last-child {
 	border-radius: var(--border-radius);
 	border-color: var(--lineColour);
 	border-width: 2px;
+	background-color: inherit;
 	font-size: 50px;
-	list-style-type: none;
+	list-style-type: ;
 	margin: 0 auto;
 	padding: var(--spacing);
 	top: 0;
