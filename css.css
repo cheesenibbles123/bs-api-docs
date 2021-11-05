@@ -9,13 +9,6 @@ body {
 	background-color: #171721;
 	color: var(--generalColour);
 	font-size: 15px;
-	margin-left: 15%;
-	margin-right: 15%;
-	margin-top: 85px;
-	padding-left: 5%;
-	padding-right: 5%;
-	border-left: 2px solid var(--generalColour);
-	border-right: 2px solid var(--generalColour);
 }
 
 pre {
@@ -64,21 +57,29 @@ th:last-child {
 	border-radius: 0 var(--borderRadius) 0 0;
 }
 
+.mainContent {
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 85px;
+	padding-left: 5%;
+	padding-right: 5%;
+	border-left: 2px solid var(--generalColour);
+	border-right: 2px solid var(--generalColour);
+	height: 100%;
+}
+
 .navbar {
-	border-radius: var(--border-radius);
-	border-color: var(--lineColour);
-	border-width: 2px;
+	border-bottom: 2px solid var(--lineColour);
 	background-color: inherit;
 	font-size: 50px;
-	list-style-type: ;
-	margin: 0 auto;
+	list-style-type: none;
+	margin: 0;
 	padding: var(--spacing);
 	top: 0;
 	position: fixed;
 	display: inline;
-	width: 60%;
+	width: 58.3%;
 	text-align: center;
-	overflow: visible;
 }
 
 .navbar:hover {
