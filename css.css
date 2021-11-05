@@ -50,5 +50,15 @@ th:last-child {
 .navbar {
 	border-radius: var(--border-radius);
 	border: 2px solid var(--generalColour);
-	font-size: 30px;
+	font-size: 50px;
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	top: 0;
+  	position: fixed;
+  	display: inline;
+}
+
+.navbar:hover {
+	cursor:pointer;
 }
