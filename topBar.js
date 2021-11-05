@@ -1,5 +1,5 @@
 document.write(`
 	<ul class="topBar">
-		<li>(Unofficial) BS Api Docs</li>
+		<li><a href="/">(Unofficial) BS Api Docs</a></li>
 	</ul>
 `);
