@@ -22,8 +22,16 @@
 			</ul>
 			
 			<h2>Request Format</h2>
+
+			The public api is accessed through making a <code>HTTPS (port 443)</code> OR <code>HTTP (port 80)</code> request to <code>blazing-sails.nitbamiapp.com</code>.
+
+			Similar to most API's, the API is divided into several endpoints that each return their own responses (and take in their own set of parameters). The format for each request is as follows:
+
+			<code>https>//blazing-sails.bitnamiapp.com/php_rest_blazingsails/api/post/<code style="color:white;">&lt;endpoint&gt;</code>.php?<code style="color:white;">api_key=</code>&<code style="color:white">parameter=value</code>...</code>
 			
 			<h2>Authentication</h2>
+
+			Authentication is done through the usage of a <code>API KEY</code> within the <code>URL Parameters</code> that get passed when making any web request.
 
 		</div>
 	</body>
