@@ -57,22 +57,19 @@ th:last-child {
 }
 
 .navbar {
-	font-size: 50px;
-	list-style-type: none;
-	margin: 0 auto;
-	top: 0;
-	position: fixed;
-	display: inline;
-	width: 80%;
-	text-align: center;
-}
-
-.navbarItem {
 	border-radius: var(--border-radius);
 	border-color: var(--lineColour);
 	border-width: 2px;
+	font-size: 50px;
+	list-style-type: none;
+	margin: 0 auto;
 	padding: var(--spacing);
+	top: 0;
+	position: fixed;
 	display: inline;
+	width: 60%;
+	text-align: center;
+	overflow: visible;
 }
 
 .navbar:hover {
