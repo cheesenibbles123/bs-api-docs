@@ -7,6 +7,7 @@
 body {
 	background-color: #171721;
 	color: var(--generalColour);
+	font-size: 15px;
 }
 
 body,
@@ -28,11 +29,13 @@ a:hover {
 	color: #00BFFF;
 }
 
+table {
+	text-align: center;
+}
 td {
 	border: 2px solid var(--generalColour);
 	text-align: center;
 }
-
 th {
 	background-color: darkgrey;
 	border: 2px solid var(--generalColour);
