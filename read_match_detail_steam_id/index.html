@@ -9,7 +9,7 @@
 	<script src="../navBar.js"></script>
 
 	<body>
-		<h1>read_players</h1>
+		<h1>read_match_detail_steam_id</h1>
 
 		<table>
 			<tbody>
@@ -30,20 +30,12 @@
 					<td>TH151SMYA9IK3Y</td>
 				</tr>
 				<tr>
-					<td>Offset</td>
-					<td><code>offset</code></td>
-					<td>Offsets the initial start value of the search</td>
+					<td>Steam ID64</td>
+					<td><code>steam_id</code></td>
+					<td>Authorisation token</td>
 					<th>Yes</th>
 					<td>Integer</td>
-					<td>15</td>
-				</tr>
-				<tr>
-					<td>Length</td>
-					<td><code>length</code></td>
-					<td>Specifies how many results to return, if none specified defaults to max 100</td>
-					<th>No</th>
-					<td>Integer</td>
-					<td>100</td>
+					<td>123456789</td>
 				</tr>
 			</tbody>
 		</table>
@@ -51,7 +43,7 @@
 		<h3>Example</h3>
 
 		<div>
-			<pre><code>GET read_players.php?api_key=XXXXXXXXXXXXXXXXX&offset=0&length=100</code></pre>
+			<pre><code>GET read_match_detail_steam_id.php?api_key=XXXXXXXXXXXXXXXXX&steam_id=YYYYYYYYYYYY</code></pre>
 		</div>
 
 		<h3>Response</h3>

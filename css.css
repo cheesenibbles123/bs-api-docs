@@ -1,7 +1,8 @@
 :root {
 	--borderRadius: 4px;
-	--spacing: 5px;
+	--spacing: 10px;
 	--generalColour: #c7c7c7;
+	--lineColour: #b3b3b3;
 }
 
 body {
@@ -13,14 +14,14 @@ body {
 	margin-top: 85px;
 }
 
-code,
-ul,
 pre {
 	padding : var(--spacing);
+	border: 2px solid var(--lineColour);
+	border-radius: var(--borderRadius);
 }
 
 code {
-	border-radius: var(--borderRadius);
+	color: #DAA520;
 }
 
 a {
@@ -33,14 +34,20 @@ a:hover {
 
 table {
 	text-align: center;
+	border-collapse: collapse;
+}
+
+td,
+th {
+	padding: var(--spacing);
 }
 td {
-	border: 2px solid var(--generalColour);
+	border: 2px solid var(--lineColour);
 	text-align: center;
 }
 th {
-	background-color: darkgrey;
-	border: 2px solid var(--generalColour);
+	background-color: #262630;
+	border: 2px solid var(--lineColour);
 }
 th:first-child {
 	border-radius: var(--borderRadius) 0 0 0;
@@ -51,16 +58,17 @@ th:last-child {
 
 .navbar {
 	border-radius: var(--border-radius);
-	border-color: var(--generalColour);
+	border-color: var(--lineColour);
 	border-size: 2px;
 	font-size: 50px;
 	list-style-type: none;
-  	margin: 0;
-  	padding: 0;
-  	top: 0;
-  	position: fixed;
-  	display: inline;
-  	width: 60%;
+	margin: 0 auto;
+	padding: var(--spacing);
+	top: 0;
+	position: fixed;
+	display: inline;
+	width: 60%;
+	text-align: center;
 }
 
 .navbar:hover {
