@@ -19,6 +19,7 @@ pre {
 	padding : var(--spacing);
 	border: 2px solid var(--lineColour);
 	border-radius: var(--borderRadius);
+	overflow-wrap: normal;
 }
 
 ul {
