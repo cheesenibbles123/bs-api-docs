@@ -100,3 +100,8 @@ th:last-child {
 	margin-left: 15%;
 	margin-right: 15%;
 }
+
+.code {
+	border: none;
+	color: white;
+}
