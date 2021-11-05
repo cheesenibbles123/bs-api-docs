@@ -1,14 +1,30 @@
+:root {
+	--borderRadius: 4px;
+	--spacing: 5px;
+	--generalColour: #c7c7c7;
+}
+
 body {
-	background-color: black;
-	color: white;
+	background-color: #171721;
+	color: var(--generalColour);
+}
+
+body,
+code,
+pre {
+	padding : var(--spacing);
+}
+
+code {
+	border-radius: var(--borderRadius);
 }
 
 a {
 	text-decoration: none;
-	color: blue;
+	color: #1E90FF;
 }
 a:hover {
-	color: lightblue;
+	color: #00BFFF;
 }
 
 td {
@@ -21,8 +37,14 @@ th {
 	border: 2px solid lightgrey;
 }
 th:first-child {
-	border-radius: 6px 0 0 0;
+	border-radius: var(--borderRadius) 0 0 0;
 }
 th:last-child {
-	border-radius: 0 6px 0 0;
+	border-radius: 0 var(--borderRadius) 0 0;
+}
+
+.navbar {
+	border-radius: var(--border-radius);
+	border: 2px solid var(--generalColour);
+	font-size: 30px;
 }
