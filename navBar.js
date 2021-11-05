@@ -1,5 +1,5 @@
 document.write(`
 	<ul class="navbar">
-		<li style="float:center;"><a href="/">(Unofficial) BS Api Docs</a></li>
+		<li style="float:center;"><a href="/bs-api-docs/">(Unofficial) BS Api Docs</a></li>
 	</ul>
 `);
