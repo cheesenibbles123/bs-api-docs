@@ -58,8 +58,6 @@ th:last-child {
 }
 
 .mainContent {
-	margin-left: 15%;
-	margin-right: 15%;
 	margin-top: 85px;
 	padding-left: 5%;
 	padding-right: 5%;
@@ -73,15 +71,21 @@ th:last-child {
 	background-color: inherit;
 	font-size: 50px;
 	list-style-type: none;
-	margin: 0;
 	padding: var(--spacing);
 	top: 0;
 	position: fixed;
 	display: inline;
-	width: 58.3%;
+	width: 67.35%%;
 	text-align: center;
+	margin-top: 0;
 }
 
 .navbar:hover {
 	cursor:pointer;
+}
+
+.navbar,
+.mainContent {
+	margin-left: 15%;
+	margin-right: 15%;
 }

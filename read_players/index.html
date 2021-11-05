@@ -10,62 +10,63 @@
 	<script src="../navBar.js"></script>
 
 	<body>
-		<h1>read_players</h1>
+		<div class="mainContent">
+			<h1>read_players</h1>
 
-		<table>
-			<tbody>
-				<tr>
-					<th>Parameter</th>
-					<th>Syntax</th>
-					<th>Description</th>
-					<th>Required</th>
-					<th>Type</th>
-					<th>Example</th>
-				</tr>
-				<tr>
-					<td>Api Key</td>
-					<td><code>api_key</code></td>
-					<td>Authorisation token</td>
-					<th>Yes</th>
-					<td>String</td>
-					<td>TH151SMYA9IK3Y</td>
-				</tr>
-				<tr>
-					<td>Offset</td>
-					<td><code>offset</code></td>
-					<td>Offsets the initial start value of the search</td>
-					<th>Yes</th>
-					<td>Integer</td>
-					<td>15</td>
-				</tr>
-				<tr>
-					<td>Length</td>
-					<td><code>length</code></td>
-					<td>Specifies how many results to return, if none specified defaults to max 100</td>
-					<th>No</th>
-					<td>Integer</td>
-					<td>100</td>
-				</tr>
-			</tbody>
-		</table>
+			<table>
+				<tbody>
+					<tr>
+						<th>Parameter</th>
+						<th>Syntax</th>
+						<th>Description</th>
+						<th>Required</th>
+						<th>Type</th>
+						<th>Example</th>
+					</tr>
+					<tr>
+						<td>Api Key</td>
+						<td><code>api_key</code></td>
+						<td>Authorisation token</td>
+						<th>Yes</th>
+						<td>String</td>
+						<td>TH151SMYA9IK3Y</td>
+					</tr>
+					<tr>
+						<td>Offset</td>
+						<td><code>offset</code></td>
+						<td>Offsets the initial start value of the search</td>
+						<th>Yes</th>
+						<td>Integer</td>
+						<td>15</td>
+					</tr>
+					<tr>
+						<td>Length</td>
+						<td><code>length</code></td>
+						<td>Specifies how many results to return, if none specified defaults to max 100</td>
+						<th>No</th>
+						<td>Integer</td>
+						<td>100</td>
+					</tr>
+				</tbody>
+			</table>
 
-		<h3>Example</h3>
+			<h3>Example</h3>
 
-		<div>
-			<pre><code>GET read_players.php?api_key=XXXXXXXXXXXXXXXXX&offset=0&length=100</code></pre>
-		</div>
+			<div>
+				<pre><code>GET read_players.php?api_key=XXXXXXXXXXXXXXXXX&offset=0&length=100</code></pre>
+			</div>
 
-		<h3>Response</h3>
+			<h3>Response</h3>
 
-		<div>
-			<pre><code>
+			<div>
+				<pre><code>
 {
 	"success" : true,
 	"data" : {...},
 	"content" : [...]
 }
-			</code></pre>
+				</code></pre>
+			</div>
 		</div>
-
 	</body>
 </html>
