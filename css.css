@@ -67,6 +67,7 @@ th:last-child {
 	padding-right: var(--bodySpacing);;
 	border-left: 2px solid var(--generalColour);
 	border-right: 2px solid var(--generalColour);
+	border-bottom: 2px solid var(--generalColour);
 	height: 100%;
 	width: 55%;
 	padding-top: 2%;
