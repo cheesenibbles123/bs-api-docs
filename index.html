@@ -20,6 +20,8 @@
 				<li><a href="read_match_details/">read_match_details</a></li>
 				<li><a href="read_match_detail_steam_id/">read_match_detail_steam_id</a></li>
 			</ul>
+			<br>
+			*Note: All end in <code>.php</code>
 			
 			<h2>Request Format</h2>
 
@@ -27,8 +29,16 @@
 			<br>
 			Similar to most API's, the API is divided into several endpoints that each return their own responses (and take in their own set of parameters). The format for each request is as follows:<br>
 			<br>
-			<pre style="overflow-wrap: break-word;"><code>https://blazing-sails.bitnamiapp.com/php_rest_blazingsails/api/post/<code class="code">&lt;endpoint&gt;</code>.php?<code class="code">api_key=XXXXXXXXXXXX</code>&<code class="code">&lt;parameter&gt;=&lt;value&gt;</code>...</code></pre>
+			<pre><code>https://blazing-sails.bitnamiapp.com/php_rest_blazingsails/api/post/<code class="code">&lt;endpoint&gt;</code></code></pre>
 			
+			<h4>Parameters</h4>
+
+			Parameters are passed in using the format:<br>
+			<br>
+			<pre><code>?&lt;someParameter&gt;=&lt;someValue&gt;&&lt;someSecondParameter&gt;=&lt;someValue&gt;</code></pre>
+			<br>
+			All endpoints will require usage of an <code>api_key</code> parameter. Any endpoint that returns an array of data will have <code>offset</code> and <code>length</code> parameters that can be used to only get a specific group of entries. Any endpoint that requests a specific user will have a <code>steam_id</code> parameter.
+
 			<h2>Authentication</h2>
 
 			Authentication is done through the usage of a <code>API KEY</code> within the <code>URL Parameters</code> that get passed when making any web request.
