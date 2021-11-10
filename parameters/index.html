@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>BS-API-DOCS</title>
+		<link href="../css.css" rel="stylesheet" type="text/css"/>
+		<link rel="icon" href="../favicon.ico" type="image/x-icon">
+		<meta charset='utf-8'>
+	</head>
+
+	<script src="../navBar.js"></script>
+
+	<body>
+		<div class="mainContent">
+			<h2>Api Key</h2>
+
+			These are used to authenticate you with the server and will determine the permission level you have. For certain requests you must have a certain permission level (See Force Update).<br> The syntax for it is the following:<br>
+			<br>
+			<pre><code>api_key=XXXXXXXXXXXXXXXXXX</code></pre>
+			<br>
+			Api key's are required in all queries made towards the API.<br>
+
+			<h2>Force Update</h2>
+
+			Force update is a restricted parameter that requires a high permission level. It tells the server to update it's local cache, and therefore can be quite slow to run depending on the endpoint chosen.<br>
+			<br>
+			The syntax for it is the folowing:<br>
+			<br>
+			<pre><code>force_update=true</code></pre>
+			<br>
+			This parameter is <b>optional</b> for all endpoints, and is only valid if you have the afforementioned permission level required.<br>
+
+			<h2>Length</h2>
+
+			Length determines the size of the response the server provides. e.g. setting length to 100 for read_players will return <b>only</b> the first 100 players. The maximum length that this parameter accepts is 100000, requesting more than this will cause the API to respond with false.<br>
+			<br>
+			The syntax for it is the following:<br>
+			<br>
+			<pre><code>length=XXXXX</code></pre>
+			<br>
+			This parameter is optional, and defaults to 100 when not provided.<br>
+
+			<h2>Offset</h2>
+
+			Offset determines the starting location in the list that the server provides (length) results of. E.g. using <code>&offset=50</code> with no length parameter (length defaults to 100 when not provided) would return players from position 50->150, using offsset of 100 would return 100->200 etc.<br>
+			<br>
+			The syntax for it is the following:<br>
+			<pre><code>offset=XXXXX</code></pre>
+			<br>
+			This parameter is optional, and defaults to 0 when not provided.
+
+			<h2>Steam ID64</h2>
+
+			Steam ID64 is the most commonly used form of Steam ID. You can get it through looking at the end of your profile URL (steamcommunity.com/id/76499999999999) <b>or if you have a custom URL</b> you can easily get it through online services such as <a href="https://steamid.io/">steamid.io</a>.<br>
+			<br>
+			The syntax for it is the following:<br>
+			<br>
+			<pre><code>steam_id=XXXXXXXXXXXXXXXXXX</code></pre>
+			<br>
+			For endpoints <a href="../read_player_steam_id">read_player_steam_id</a> and <a href="../read_match_detail_steam_id">read_match_detail_steam_id</a> this field is required as those return data for an individual player. For other endpoints this field is not in use.<br>
+		</div>
+	</body>
+</html>
