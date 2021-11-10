@@ -106,3 +106,7 @@ th:last-child {
 	border: none;
 	color: white;
 }
+
+.whiteBaseText {
+	color: var(--generalColour);
+}
